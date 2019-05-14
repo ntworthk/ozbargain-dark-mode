@@ -2,6 +2,8 @@ var mainBody = document.getElementById("main");
 mainBody.style.backgroundColor = '#323639';
 mainBody.style.color = 'white';
 
+var wrappy = document.getElementsByClassName("wrapsb1");
+wrappy[0].style.backgroundColor = '#323639';
 
 var re = /node|comment/;
 var ayes = document.getElementsByTagName("a");
