@@ -7,15 +7,20 @@ mainBody.style.color = 'white';
 
 var re = /node/;
 var ayes = document.getElementsByTagName("a");
-[].forEach.call(ayes, function (aye) {
-if (re.test(aye.href)) {
-aye.style.color = "white";});
+[].forEach.call(ayes, function (aye) {if (re.test(aye.href)) {aye.style.color = "green";}});
+
+re = /user|goto|cat/;
+var ayes = document.getElementsByTagName("a");
+[].forEach.call(ayes, function (aye) {if (re.test(aye.href)) {aye.style.color = "red";}});
 
 
-if
-ayes[17].href 
-like "node"
-then apply
+var css = 'node-teaser:hover{ background-color: #00ff00 }';
+var style = document.createElement('style');
 
-var re = /node/;
+if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+} else {
+    style.appendChild(document.createTextNode(css));
+}
 
+document.getElementsByTagName('head')[0].appendChild(style);

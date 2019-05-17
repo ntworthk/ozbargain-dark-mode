@@ -79,4 +79,14 @@ javascript: (function() {
 		addClass(deal, 'expired-new');
 	}
 
+	var style3 = document.createElement('style');
+	style3.type = 'text/css';
+	style3.innerHTML = 'div.sidebar ul.ozblist > li:hover { background-color: #000000;}';
+	document.getElementsByTagName('head')[0].appendChild(style3);
+
+	var style4 = document.createElement('style');
+	style4.type = 'text/css';
+	style4.innerHTML = 'a { color: #ffffff; text-decoration: none;} .shade0, .shade0h:hover, ul.pager a:hover, ul.tabs.primary {background-color: #000000;} a:hover { color: #ffffff;}';
+	document.getElementsByTagName('head')[0].appendChild(style4);
+
 })()
