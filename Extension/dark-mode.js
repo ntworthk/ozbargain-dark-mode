@@ -116,13 +116,23 @@ javascript: (function() {
 	}
 
 	var helps = document.getElementsByClassName('help');
-	for (let shade of shades) {
-		shade.style.color = '#000000';
+	for (let help of helps) {
+		help.style.color = '#ffffff';
 	}
 
 	var style6 = document.createElement('style');
 	style6.type = 'text/css';
-	style6.innerHTML = 'fieldset.collapsible legend {background-image: url("chrome-extension://ebppglgeipmgbjbjighodhmhaooeejhb/menu-expanded-color.png")} fieldset.collapsed legend {background-image: url("chrome-extension://ebppglgeipmgbjbjighodhmhaooeejhb/menu-collapsed-color.png")}'
+	style6.innerHTML = `fieldset.collapsible legend {background-image: url("chrome-extension://ebppglgeipmgbjbjighodhmhaooeejhb/menu-expanded-color.png")}
+						fieldset.collapsed legend {background-image: url("chrome-extension://ebppglgeipmgbjbjighodhmhaooeejhb/menu-collapsed-color.png")}
+						div.form-item label { color: #ffffff}
+						.btn.btn-primary { 	background-color: #393;
+											border-color: #393;
+    										color: #fff;
+    									 }
+    					.btn.btn-primary:hover {
+    						background-color: #00a900;
+    						border-color: #00a900;
+    					}`
 	document.getElementsByTagName('head')[0].appendChild(style6);
 
 	var legends = document.getElementsByTagName('legend');
@@ -130,4 +140,6 @@ javascript: (function() {
 		legend.style.backgroundColor = '#000000';
 	}
 
+
+	var formItems = document.getElementsByClassName('form-item')
 })()
