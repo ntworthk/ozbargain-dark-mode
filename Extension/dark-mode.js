@@ -132,6 +132,9 @@ javascript: (function() {
     					.btn.btn-primary:hover {
     						background-color: #00a900;
     						border-color: #00a900;
+    					}
+    					.shade3, .shade3:hover {
+    						background-color: #393
     					}`
 	document.getElementsByTagName('head')[0].appendChild(style6);
 
