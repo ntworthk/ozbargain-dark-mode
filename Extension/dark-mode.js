@@ -120,4 +120,14 @@ javascript: (function() {
 		shade.style.color = '#000000';
 	}
 
+	var style6 = document.createElement('style');
+	style6.type = 'text/css';
+	style6.innerHTML = 'fieldset.collapsible legend {background-image: url("chrome-extension://ebppglgeipmgbjbjighodhmhaooeejhb/menu-expanded-color.png")} fieldset.collapsed legend {background-image: url("chrome-extension://ebppglgeipmgbjbjighodhmhaooeejhb/menu-collapsed-color.png")}'
+	document.getElementsByTagName('head')[0].appendChild(style6);
+
+	var legends = document.getElementsByTagName('legend');
+	for (let legend of legends) {
+		legend.style.backgroundColor = '#000000';
+	}
+
 })()
