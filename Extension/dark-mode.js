@@ -89,4 +89,35 @@ javascript: (function() {
 	style4.innerHTML = 'a { color: #ffffff; text-decoration: none;} .shade0, .shade0h:hover, ul.pager a:hover, ul.tabs.primary {background-color: #000000;} a:hover { color: #ffffff;}';
 	document.getElementsByTagName('head')[0].appendChild(style4);
 
+	var style5 = document.createElement('style');
+	style5.type = 'text/css';
+	style5.innerHTML = 'div.sidebar ul.ozblist > li:hover { background-color: #000000;}'
+	document.getElementsByTagName('head')[0].appendChild(style5);
+
+
+	var comments = document.getElementsByClassName('comment');
+	for (let comment of comments) {
+		comment.style.backgroundColor = '#323639';
+	}
+
+	var forms = document.getElementsByClassName('form-textarea');
+	for (let form of forms) {
+		form.style.backgroundColor = '#c1c1c1';
+	}
+
+	var bars = document.getElementsByClassName('bar');
+	for (let bar of bars) {
+		bar.style.backgroundColor = '#c1c1c1';
+	}
+
+	var shades = document.getElementsByClassName('shade1h');
+	for (let shade of shades) {
+		shade.style.color = '#000000';
+	}
+
+	var helps = document.getElementsByClassName('help');
+	for (let shade of shades) {
+		shade.style.color = '#000000';
+	}
+
 })()
