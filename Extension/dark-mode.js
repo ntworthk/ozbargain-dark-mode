@@ -122,8 +122,8 @@ javascript: (function() {
 
 	var style6 = document.createElement('style');
 	style6.type = 'text/css';
-	style6.innerHTML = `fieldset.collapsible legend {background-image: url("chrome-extension://ebppglgeipmgbjbjighodhmhaooeejhb/menu-expanded-color.png")}
-						fieldset.collapsed legend {background-image: url("chrome-extension://ebppglgeipmgbjbjighodhmhaooeejhb/menu-collapsed-color.png")}
+	style6.innerHTML = `fieldset.collapsible legend {background-image: url("chrome-extension://ollelnhjbpiijemaghpocfkacpfaodgn/menu-expanded-color.png")}
+						fieldset.collapsed legend {background-image: url("chrome-extension://ollelnhjbpiijemaghpocfkacpfaodgn/menu-collapsed-color.png")}
 						div.form-item label { color: #ffffff}
 						.btn.btn-primary { 	background-color: #393;
 											border-color: #393;
