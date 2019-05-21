@@ -135,6 +135,26 @@ javascript: (function() {
     					}
     					.shade3, .shade3:hover {
     						background-color: #393
+    					}
+    					ul.competition-list-meta li {
+    						color: #c1c1c1
+    					}
+    					div.menupopup {
+    						background-color: #000;
+    						color: #fff;
+    					}
+    					div.menupopup ul.dropdown a { color: #ffffff;
+    					}
+    					div.menupopup h3 {
+    						background-color: #000000;
+    					}
+    					div.menupopup ul.dropdown a:hover {background-color: #323639;
+    					}
+    					div.menupopup div.group {
+    						background-color: #000000;
+    					}
+    					a:hover {
+    						color: #000000;
     					}`
 	document.getElementsByTagName('head')[0].appendChild(style6);
 
@@ -144,5 +164,10 @@ javascript: (function() {
 	}
 
 
-	var formItems = document.getElementsByClassName('form-item')
+	var formItems = document.getElementsByClassName('form-item');
+
+
+
+
+
 })()
