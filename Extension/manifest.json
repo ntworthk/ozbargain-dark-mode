@@ -1,9 +1,10 @@
 {
 	"manifest_version" : 2,
 	"name": "OZB dark mode",
-	"version": "0.2.1",
+	"version": "0.3",
 	"content_scripts": [
 		{
+			"css": ["main-dark.css", "style-dark.css"],
 			"matches": [
 				"https://www.ozbargain.com.au/*", "http://www.ozbargain.com.au/*"
 			],
